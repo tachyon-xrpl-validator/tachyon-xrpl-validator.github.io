@@ -271,9 +271,9 @@
         </div>
 
         <div class="tech-box">
-            <span class="card-label">VALIDATOR PUBLIC KEY</span>
+            <span class="card-label">VALIDATOR PUBLIC SIGNING KEY</span>
             <button class="copy-btn" onclick="copyKey()">COPY</button>
-            <div class="key-display" id="pubkey">nHUnzYnoC5LzfxjWrm5RjyhXiWs74NF9sA6MUyiioxr6ejLzB68d</div>
+            <div class="key-display" id="pubkey">n9MBFENVDSdh9cKxiLsRmdpWE3UGs3XpBPwFfxdhpeQfG8i7Fjxt</div>
         </div>
 
         <div class="actions">
@@ -294,8 +294,8 @@
     </div>
 
     <script>
-        const VALIDATOR_SIGKEY = 'n9MBFENVDSdh9cKxiLsRmdpWE3UGs3XpBPwFfxdhpeQfG8i7Fjxt';
-        const API_URL = `https://api.allorigins.win/raw?url=${encodeURIComponent('https://api.xrpscan.com/api/v1/validator/' + VALIDATOR_SIGKEY)}`;
+        const VALIDATOR_PUBSIGKEY = 'n9MBFENVDSdh9cKxiLsRmdpWE3UGs3XpBPwFfxdhpeQfG8i7Fjxt';
+        const API_URL = `https://api.allorigins.win/raw?url=${encodeURIComponent('https://api.xrpscan.com/api/v1/validator/' + VALIDATOR_PUBSIGKEY)}`;
 
         async function fetchValidatorData() {
             // Visual Reset
