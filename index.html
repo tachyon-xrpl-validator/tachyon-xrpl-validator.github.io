@@ -295,7 +295,7 @@
 
     <script>
         const VALIDATOR_PUBSIGKEY = 'n9MBFENVDSdh9cKxiLsRmdpWE3UGs3XpBPwFfxdhpeQfG8i7Fjxt';
-        const API_URL = `https://api.allorigins.win/raw?url=${encodeURIComponent('https://api.xrpscan.com/api/v1/validator/' + VALIDATOR_PUBSIGKEY)}`;
+        const API_URL = `https://api.xrpscan.com/api/v1/validator/${VALIDATOR_PUBSIGKEY}`;
 
         async function fetchValidatorData() {
             // Visual Reset
